@@ -1,0 +1,1048 @@
+body {
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #fff5dd;
+}
+
+.container {
+    background-image: linear-gradient(to right, #5f66e2, #414478);
+    border-radius: 0.4pc;
+    border: none;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: 15px;
+    padding: 0 25px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    animation: vibrarLogo 1s infinite alternate;
+    display: flex;
+}
+
+.item {
+    background-image: linear-gradient(to top, #ffacac, #ff2020, #ffacac);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.item img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+.item-content {
+    text-align: center;
+}
+
+.item h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.item p {
+    font-size: 16px;
+    line-height: 1.5;
+    
+    color: white;
+}
+
+.texto {
+    font-size: 15px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-right: auto;
+}
+
+svg {
+    margin-left: auto;
+    width: 30px;
+    height: 30px;
+    margin-right: 50px;
+}
+
+.imagendato {
+    display: none;
+}
+
+.oraciones {
+    margin-top: 40px;
+    margin-left: 18%;
+}
+
+.oraciones p {
+    margin-bottom: 40px;
+    font-size: 20px;
+}
+
+.selected {
+    transform: scale(1.1);
+    border-color: rgb(153, 255, 0);
+    color: #000000 !important;
+    background-color: rgb(210, 241, 197) !important;
+}
+
+.destroyed {
+    opacity: 0.5;
+    /* Reducir la opacidad */
+    filter: grayscale(100%);
+    pointer-events: none;
+    /* Desactivar los eventos del mouse */
+    cursor: default;
+    /* Cambiar el cursor a predeterminado */
+}
+
+.questions-container {
+    margin-top: 30px;
+    padding: 0 50px;
+}
+
+.questions-container ol {
+    list-style-type: decimal;
+    padding-left: 1px;
+    color: #000000;
+    font-size: 2px;
+}
+
+.questions-container ol li {
+    margin-bottom: 20px;
+    font-size: 15px;
+    font-family: "Playfair Display", serif;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    gap: 15px;
+    width: 200%;
+}
+
+.options button {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    background-image: linear-gradient(to top, #b4cbe7, #bdf0ff);
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    font-size: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 40%;
+}
+
+.options button:hover {
+    background-image: linear-gradient(to bottom, #2989fd, #95e4fb);
+}
+
+
+
+.close {
+    color: #000000;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    transition: color 0.3s;
+    /* Transición suave */
+}
+
+.close:hover,
+.close:focus {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.contenedortexto {
+    width: 800px;
+    background-image: linear-gradient(to bottom, #ffd08a, #ff8b74,#ffd08a);
+    border-radius: 1em;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    margin-top: 1%;
+    margin-left: 20%;
+}
+
+.contenedortexto h1 {
+    font-size: 18px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 24px;
+    flex: 1;
+    text-align: center;
+    margin: 0;
+}
+
+.header img {
+    width: 60px;
+    height: auto;
+}
+
+.title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 10px 0;
+    -webkit-text-stroke: 2px rgb(255, 0, 0);
+    font-family: "Oswald", sans-serif;
+    color: white;
+}
+
+.content {
+    text-align: justify;
+    font-size: 16px;
+    margin-bottom: 20px;
+    position: relative;
+    font-family: "Playfair Display", serif;
+}
+
+.content img.inca {
+    display: none;
+    float: left;
+    margin-right: 20px;
+    width: 150px;
+    height: auto;
+}
+
+.content img.llama {
+    display: none;
+    float: right;
+    margin-left: 20px;
+    width: 150px;
+    height: auto;
+}
+
+.botones {
+    margin-top: 80px;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+/* Animación de aparición */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.botones button {
+    margin-bottom: 15px;
+    border-radius: 4cap;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 200px;
+    height: 40px;
+    margin-right: 15px;
+    box-shadow: 0px 0px 10px rgba(6, 101, 202, 0.5);
+    background-color: rgb(211, 229, 245);
+}
+
+.botones button:hover {
+    background-color: rgb(81, 157, 224);
+    color: white;
+}
+
+.options button.correct-answer {
+    background-image: linear-gradient(to top, #bdf1a8, #89fb6a);
+    color: rgb(0, 0, 0);
+    cursor: default;
+    opacity: 1;
+}
+
+.options button:disabled {
+    pointer-events: none;
+}
+
+.modalNext {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+
+.modalNext-content {
+    background: linear-gradient(to top, #f88f32, #ffbb77);
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 20%;
+    text-align: center;
+    animation: modalFadeIn 0.5s ease-out;
+    position: relative;
+    margin-top: 10%;
+
+}
+
+.modalNext.show {
+    opacity: 1;
+}
+
+.modalNext.hide {
+    opacity: 0;
+}
+
+.show {
+    display: block !important;
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.modalNext-content p {
+    font-size: 0.8em;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin: 0;
+    font-weight: bold;
+}
+
+/*************************/
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+.modal-content {
+    background-image: url('../imagen/fondoderrota.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+    height: 200px;
+    color: white;
+    border-radius: 3cap;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 1.5);
+}
+
+.modal-buttons {
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+.modal-buttons button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 20px;
+    border: 2px solid #505050;
+    background-color: rgba(30, 68, 255, 0.747);
+    border-radius: 1cap;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Playfair Display', cursive;
+}
+
+.modal-content img {
+    width: 100%;
+    height: auto;
+}
+
+
+.modal-buttons button:hover {
+    background-color: rgb(119, 217, 255);
+    color: #000;
+    transform: scale(1.1);
+}
+
+/* Estilos del modal */
+.modaldato {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Fondo semi-transparente */
+}
+
+/* Estilos del modal centrado */
+.modal-contenido {
+    background: linear-gradient(to bottom, #ADD8E6, #4169E1);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Sombra suave */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 80%;
+    /* Habilitar scroll vertical si el contenido es demasiado largo */
+}
+
+.cerrar-container {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.cerrar {
+    color: #FFF;
+    /* Texto blanco */
+    font-size: 24px;
+}
+
+.lado {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* Dos columnas de igual ancho */
+    position: relative;
+}
+
+.derecha {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.content img {
+    width: 100%;
+    max-width: 1000px;
+    margin: 10px 0;
+}
+
+.linea {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    /* Posiciona la línea en el centro horizontal */
+    width: 2px;
+    /* Grosor de la línea */
+    background-color: black;
+    /* Color de la línea */
+    z-index: -1;
+    /* Coloca la línea detrás del contenido */
+}
+
+.llave {
+    position: absolute;
+    top: 50%;
+    left: calc(50% + 1px);
+    /* Posiciona la parte de la llave a la derecha de la línea */
+    transform: translateY(-50%);
+    /* Centra verticalmente la parte de la llave */
+    width: 20px;
+    /* Ancho de la parte de la llave */
+    height: 20px;
+    /* Altura de la parte de la llave */
+    background-color: black;
+    /* Color de la llave */
+    clip-path: polygon(0 0, 100% 50%, 0 100%);
+    /* Forma de la llave */
+}
+
+@keyframes corazonRoto {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(0);
+    }
+}
+
+.corazon-roto {
+    animation: corazonRoto 1s ease forwards;
+}
+
+.icono-ayuda {
+    width: 80px;
+}
+
+/* Estilos para el icono de flecha */
+#arrow-icon {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+/* Animación para mover la flecha de izquierda a derecha */
+@keyframes moveArrow {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(20px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Aplicar la animación a la flecha */
+#arrow-icon {
+    animation: moveArrow 2s ease infinite;
+}
+
+/* Estilos para el icono Mute */
+#mute-icon {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    fill: #000000;
+    display: none;
+}
+
+/* Estilos cuando se pasa el cursor sobre el icono */
+#mute-icon:hover {
+    fill: #655d5d;
+}
+
+#sound-icon {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    fill: #000000;
+    display: block;
+}
+
+
+@keyframes vibrarLogo {
+    0% {
+        transform: translateY(-3px);
+    }
+
+    100% {
+        transform: translateY(3px);
+    }
+}
+
+@media (max-width:725px) {
+    .modal-contenido {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .contenedortexto {
+        margin-left: 5%;
+        width: 75%;
+
+    }
+
+    .lado {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #wordSearchContainer {
+        display: grid;
+        grid-template-columns: repeat(13, 1fr);
+        gap: 2px;
+        margin-top: 20px;
+        width: 100%;
+        max-width: 520px;
+        margin-left: 1%;
+    }
+
+    .item {
+        background-image: linear-gradient(to top, #ffacac, #ff2020, #ffacac);
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        align-items: center;
+        padding: 10px;
+        border-radius: 1em;
+    }
+
+    .item img {
+        display: none;
+    }
+
+    .item-content {
+        text-align: center;
+    }
+
+    .item h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .item p {
+        font-size: 15px;
+        line-height: 1.5;
+        color: white;
+        margin: 10px;
+    }
+
+    .izquierda,
+    .derecha {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1065px) and (min-width: 725px) {
+    .contenedortexto {
+        margin-left: 8%;
+        width: 70%;
+
+    }
+
+    .title {
+        font-family: "Oswald", sans-serif;
+        font-size: 35px;
+    }
+
+    .contenedortexto h1 {
+        font-size: 20px;
+    }
+
+    #wordSearchContainer {
+        display: grid;
+        grid-template-columns: repeat(13, 1fr);
+        gap: 2px;
+        margin-top: 20px;
+        width: 100%;
+        max-width: 520px;
+        margin-left: 5%;
+    }
+    .item {
+        background-image: linear-gradient(to top, #ffacac, #ff2020, #ffacac);
+        margin-bottom: 20px;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    .item img {
+        display: none;
+    }
+
+    .item-content {
+        width: 60%;
+    }
+
+    .item h2 {
+        margin-top: 10px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .item p {
+        margin: 10px 0 0;
+        font-size: 16px;
+        color: white;
+    }
+
+    #wordSearchContainer div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        aspect-ratio: 1;
+        background-color: #ffffff;
+        border: 1px solid #000000;
+        font-size: 15px;
+        cursor: pointer;
+        user-select: none;
+        border-radius: 0.8cap;
+    }
+
+    .content {
+        font-family: "Playfair Display", serif;
+        font-size: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    .content img {
+        width: 100%;
+        max-width: 1000px;
+        margin: 10px 0;
+    }
+    #wordSearchContainer .selected {
+        background-color: #87CEFA;
+    }
+
+    #wordSearchContainer .correct {
+        background-color: #9aff86;
+    }
+
+    #wordList {
+        list-style-type: none;
+        padding: 0;
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 10%;
+    }
+
+    #wordList li {
+        background-color: #ffffff;
+        margin: 5px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 1em;
+        font-size: 12px;
+    }
+
+    #wordList li.found {
+        background-color: #a5ffc5;
+    }
+
+    .content img.inca {
+        display: block;
+    }
+
+    .content img.llama {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1309px) and (min-width: 1065px) {
+    body {
+        margin: 0;
+    }
+
+    .modalNext-content p {
+        font-size: 1.5em;
+    }
+
+    .item {
+        background-image: linear-gradient(to top, #ffacac, #ff2020, #ffacac);
+        margin-bottom: 20px;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    .item img {
+        width: 20%;
+        border-radius: 8px;
+        margin-left: 2px;
+    }
+
+    .item-content {
+        width: 60%;
+    }
+
+    .item h2 {
+        margin-top: 10px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .item p {
+        margin: 10px 0 0;
+        font-size: 16px;
+        color: white;
+    }
+
+    .container {
+        max-width: 1300px;
+        height: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        align-items: center;
+    }
+
+    .questions-container ol li {
+        font-size: 18px;
+    }
+
+    .contenedortexto {
+        margin-left: 10%;
+    }
+
+    .texto {
+        font-size: 18px;
+        margin-right: auto;
+    }
+
+    svg {
+        margin-left: auto;
+    }
+
+    .content {
+        font-family: "Playfair Display", serif;
+        font-size: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .content img.inca {
+        display: block;
+    }
+
+    .content img.llama {
+        display: block;
+    }
+
+    .oraciones {
+        margin-left: 15%;
+        float: left;
+    }
+
+    .oraciones p {
+        font-size: 25px;
+    }
+
+    .contenedortexto {
+        margin-left: 12%;
+    }
+    .content img {
+        width: 100%;
+        max-width: 1000px;
+        margin: 10px 0;
+    }
+    #wordList li {
+        background-color: #ffffff;
+        margin: 5px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 1em;
+        font-size: 14px;
+    }
+
+    .botones {
+        margin-top: 50px;
+        flex-direction: row;
+        float: right;
+        margin-right: 20%;
+    }
+
+    .botones button {
+        margin-bottom: 45px;
+        margin-right: 15px;
+    }
+
+    .img {
+        margin-top: 15px;
+    }
+}
+
+@media (min-width: 1310px) {
+    .modalNext-content p {
+        font-size: 1.5em;
+    }
+
+    body {
+        margin: 0;
+    }
+
+    .contenedortexto h1 {
+        font-size: 25px;
+    }
+
+    .contenedortexto {
+        margin-left: 20%;
+    }
+
+    .container {
+        max-width: 1289px;
+        height: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        align-items: center;
+    }
+
+    .texto {
+        font-size: 18px;
+        margin-right: auto;
+    }
+
+    svg {
+        margin-left: auto;
+    }
+
+    .content {
+        font-family: "Arial", serif;
+        font-size: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .content img {
+        width: 100%;
+        max-width: 1000px;
+        margin: 10px 0;
+    }
+
+    .imagendato {
+        display: flex;
+        position: absolute;
+        width: 300px;
+        height: auto;
+        margin-left: 75%;
+        margin-top: 8%;
+    }
+
+    .title {
+        font-family: "Oswald", sans-serif;
+        font-size: 45px;
+    }
+
+    .item {
+        background-image: linear-gradient(to top, #ffacac, #ff2020, #ffacac);
+        margin-bottom: 20px;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    .item img {
+        width: 40%;
+        border-radius: 8px;
+        margin-left: 20px;
+    }
+
+    .item-content {
+        width: 60%;
+    }
+
+    .item h2 {
+        margin-top: 10px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .item p {
+        margin: 10px 0 0;
+        font-size: 16px;
+        color: white;
+    }
+
+    .questions-container ol li {
+        font-family: "Playfair Display", serif;
+        font-size: 18px;
+    }
+
+    .content img.inca {
+        display: block;
+    }
+
+    .content img.llama {
+        display: block;
+    }
+
+    .oraciones {
+        margin-left: 10%;
+        float: left;
+    }
+
+    .oraciones p {
+        font-size: 25px;
+    }
+
+    .botones {
+        margin-top: 50px;
+        margin-right: 200px;
+        float: right;
+        flex-direction: column;
+
+    }
+
+    .options {
+        flex-direction: row;
+        width: 90%;
+    }
+
+    .options button {
+
+        font-size: 15px;
+    }
+
+    .botones button {
+        margin-bottom: 45px;
+    }
+
+    .img {
+        margin-top: 15px;
+    }
+
+    #wordList li {
+        background-color: #ffffff;
+        margin: 5px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 1em;
+        font-size: 15px;
+    }
+
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lectura</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="shortcut icon" href="../imagen/logo.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <p class="texto">¡Relaciona y aprende sobre destinos turísticos en América Latina!</p>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="35" height="35" fill="#FFFFFF">
+            <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-.77-3.29-2-4.22v8.45c1.23-.93 2-2.45 2-4.23zM14 3.23v2.06c2.89 1.17 5 4.06 5 7.71s-2.11 6.54-5 7.71v2.06c4.01-1.25 7-5.06 7-9.77s-2.99-8.52-7-9.77z" />
+        </svg>
+    </div>
+
+    <div class="contenedor-texto">
+        <h1>Turismo en América Latina</h1>
+        <p>América Latina es una región bendecida por la naturaleza, donde todos los países que la conforman tienen lugares mágicos e impresionantes, siendo bonitos desafíos para quienes deciden aventurarse a conocer nuevas culturas. Por ello, aquí tenemos algunos destinos perfectos para hacer turismo:</p>
+
+        <div class="destinos">
+            <div class="destino">
+                <div class="destino-img">
+                    <img src="../imagen/HD-wallpaper-salar-de-uyuni-de-salar-uyuni.jpg" alt="Descripción de la imagen">
+                </div>
+                <div class="destino-contenido">
+                    <h2>Salar de Uyuni (Bolivia)</h2>
+                    <p>Considerado el salar más grande del mundo, el Salar de Uyuni está ubicado en la ciudad boliviana de Potosí. Su origen se remonta a épocas prehistóricas, donde un lago antiguo de agua salada se secó con el calor, tomando esa apariencia de espejo. Pero no solo se utiliza este lugar para fines turísticos, también es un reservorio de sal y litio, sacando muchas toneladas al año. Muchas de las personas que visitaron el Salar de Uyuni dicen que da la sensación de caminar en el vacío.</p>
+                </div>
+            </div>
+            <div class="destino">
+                <div class="destino-img">
+                    <img src="../imagen/vistas-del-canal-desde.jpg" alt="Isla Tortuga">
+                </div>
+                <div class="destino-contenido">
+                    <h2>Isla Tortuga (Costa Rica)</h2>
+                    <p>Costa Rica es un país donde se puede apreciar mucha naturaleza, eso se ve reflejado en todos sus destinos turísticos, como los parques nacionales, volcanes, cataratas o islas. Uno de los lugares más conocidos en este país es la Isla Tortuga. Sin embargo, este sitio no cuenta con hoteles, manteniendo todas sus zonas naturales. Para llegar a este lugar se debe viajar en bote y hay un horario establecido que permite visitas hasta las 4 de la tarde.</p>
+                </div>
+            </div>
+            <div class="destino">
+                <div class="destino-img">
+                    <img src="../imagen/riveramaya.webp" alt="Riviera Maya">
+                </div>
+                <div class="destino-contenido">
+                    <h2>Riviera Maya (México)</h2>
+                    <p>La Riviera Maya es uno de los destinos turísticos más conocidos en el mundo, siendo una elección común entre las personas que desean pasar unas buenas vacaciones. El sol, la arena, el mar azul y los hoteles te ofrecen una experiencia inolvidable. Entre las actividades para hacer en la Riviera Maya se encuentran: el buceo, los paseos en cuatrimotos, las caminatas y la visita al zoológico de la zona.</p>
+                </div>
+            </div>
+            <div class="destino">
+                <div class="destino-img">
+                    <img src="../imagen/cataratas-iguazu-brasil.jpg" alt="Cataratas de Iguazú">
+                </div>
+                <div class="destino-contenido">
+                    <h2>Cataratas de Iguazú (Argentina - Brasil)</h2>
+                    <p>Las famosas Cataratas del Iguazú se encuentran en la frontera de Brasil y Argentina, ambos países comparten el cuidado del lugar. Está considerada entre las 7 maravillas naturales del mundo. La Garganta del diablo, la catarata más grande, mide 80 metros de alto. Entre las actividades más comunes que realizan los turistas se encuentra el paseo en barco donde pasan por debajo de las cataratas.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="relaciona">
+            <p>Relaciona cada destino con su descripción correcta:</p>
+            <ol>
+                <li>
+                    <div class="pregunta">Está en la lista de las 7 maravillas naturales del mundo. Se encuentra en la frontera entre Argentina y Brasil.</div>
+                    <div class="dropzone" data-respuesta="Cataratas de Iguazú"></div>
+                </li>
+                <li>
+                    <div class="pregunta">Está ubicado en Potosí, Bolivia. Además de ser un lugar turístico, también es un reservorio de sal y litio.</div>
+                    <div class="dropzone" data-respuesta="Salar de Uyuni"></div>
+                </li>
+                <li>
+                    <div class="pregunta">Solo se puede visitar este lugar hasta las 4 de la tarde.</div>
+                    <div class="dropzone" data-respuesta="Isla Tortuga"></div>
+                </li>
+                <li>
+                    <div class="pregunta">Este es uno de los destinos turísticos más populares del mundo.</div>
+                    <div class="dropzone" data-respuesta="Riviera Maya"></div>
+                </li>
+            </ol>
+            <div class="opciones">
+                <button draggable="true" data-destino="Cataratas de Iguazú">Cataratas de Iguazú</button>
+                <button draggable="true" data-destino="Salar de Uyuni">Salar de Uyuni</button>
+                <button draggable="true" data-destino="Riviera Maya">Riviera Maya</button>
+                <button draggable="true" data-destino="Isla Tortuga">Isla Tortuga</button>
+            </div>
+        </div>
+    
+    <!-- Modals -->
+    <div id="modal" class="modalNext">
+        <div class="modalNext-content">
+            <p>¡BIEN HECHO!</p>
+            <p>¡ACTIVIDAD COMPLETADA!</p>
+        </div>
+    </div>
+
+    <svg id="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+        <defs>
+            <linearGradient id="linear-gradient" x1="24" y1="48" x2="24" y2="0" gradientUnits="userSpaceOnUse">
+                <stop offset="0" stop-color="#27e9de" />
+                <stop offset="0.52" stop-color="#03a4ec" />
+                <stop offset="1" stop-color="#2547a8" />
+            </linearGradient>
+        </defs>
+        <circle cx="24" cy="24" r="21" stroke="url(#linear-gradient)" stroke-width="2" fill="none" />
+        <path d="M15 24h14M24 18l6 6-6 6" stroke="url(#linear-gradient)" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+    </svg>
+    <script src="script.js"></script>
+</body>
+
+</html>

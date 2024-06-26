@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lectura</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="shortcut icon" href="../imagen/logo.ico" type="imagen/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <p class="texto">¡Relaciona y aprende sobre destinos turísticos en América Latina!</p>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="35" height="35" fill="#FFFFFF">
+            <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-.77-3.29-2-4.22v8.45c1.23-.93 2-2.45 2-4.23zM14 3.23v2.06c2.89 1.17 5 4.06 5 7.71s-2.11 6.54-5 7.71v2.06c4.01-1.25 7-5.06 7-9.77s-2.99-8.52-7-9.77z" />
+        </svg>
+    </div>
+
+  <div class="contenedor-texto">
+        <h1>El futuro de los idiomas</h1>
+        <p>¿Cuáles crees que serán los idiomas más hablados en el futuro? Algunos expertos afirman que sólo tres
+            idiomas predominarán en el futuro: el español, el inglés y el chino mandarín, ¿qué opinas?
+           </p>
+
+        <div class="destinos">
+            <div class="destino">
+               
+                <div class="destino-contenido">
+                    
+                    <p>Hoy en día, la mayoría de las ofertas de empleo exigen como requisito
+                        conocer dos lenguas diferentes. El aprendizaje del idioma inglés,
+                        por ejemplo, se ha convertido en una necesidad, haciendo que a la
+                        hora de buscar empleo, los trabajadores que hablan inglés tienen
+                        un futuro mucho más prometedor que los trabajadores que no lo
+                        hablan. Por otro lado, se prevé que en un futuro cercano el español
+                        será el tercer idioma más hablado, después del chino mandarín y
+                        del inglés. Actualmente, casi 500 millones de personas lo hablan en
+                        todo el mundo.
+                        Pero, mientras estos idiomas avanzan, ¿qué pasará con las lenguas
+                        autóctonas?, ¿cuántos de estos idiomas o lenguas nativas perdurarán
+                        para el próximo siglo? Porque, si estas lenguas desaparecen, mucho
+                        conocimiento y cultura ancestral se perderán también.
+                        Con 68 lenguas autóctonas y más de 7 millones de hablantes,
+                        México está ubicado entre los países con más lenguas autóctonas en
+                        el mundo y el segundo en Latinoamérica.
+                        En el Perú, por otro lado, hay un total de
+                        47 lenguas originarias. De todas ellas, el
+                        quechua es el más conocido, de hecho,
+                        se habla también en otros países como
+                        Bolivia o Ecuador. Hasta el momento,
+                        se han actualizado los alfabetos de 41
+                        lenguas originarias y se han creado
+                        diferentes libros didácticos para los
+                        niños de las zonas que se comunican en
+                        estas lenguas.</p>
+                        
+                        <div class="contenedor-imagenes">
+                            <div class="destino-img1">
+                                <img src="../imagen/idiomass.jpg" alt="Imagen de idiomas en Venezuela">
+                            </div>
+                            <div class="destino-img2">
+                                <img src="../imagen/idiomas2.jpg" alt="Otra imagen relacionada con idiomas en Venezuela">
+                            </div>
+                        </div>
+                </div>
+            </div>
+            
+        <h1 style="margin-top: 50px;">Complete la sopa de letras con las palabras mostradas.</h1>
+        <ul id="wordList"></ul>
+        <div id="wordSearchWrapper">
+            <div id="wordSearchContainer"></div>
+        </div>
+
+       
+    </div>
+
+    <div id="modal" class="modalNext">
+        <div class="modalNext-content">
+            <p>¡BIEN HECHO!</p>
+            <p>¡ACTIVIDAD COMPLETADA!</p>
+        </div>
+    </div>
+
+    <svg id="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+        <defs>
+            <linearGradient id="linear-gradient" x1="24" y1="48" x2="24" y2="0" gradientUnits="userSpaceOnUse">
+                <stop offset="0" stop-color="#27e9de" />
+                <stop offset="0.52" stop-color="#03a4ec" />
+                <stop offset="1" stop-color="#2547a8" />
+            </linearGradient>
+        </defs>
+        <circle cx="24" cy="24" r="21" stroke="url(#linear-gradient)" stroke-width="2" fill="none" />
+        <path d="M15 24h14M24 18l6 6-6 6" stroke="url(#linear-gradient)" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+    </svg>
+    <script src="script.js"></script>
+    <script src="script2.js"></script>
+
+</body>
+
+</html>

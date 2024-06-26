@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lectura</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="shortcut icon" href="../imagen/logo.ico" type="imagen/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <p class="texto">¡Lee atentamente y responde las preguntas marcando <i>"V"</i> verdadero o <i>"F"</i> Falso!</p>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="35" height="35" fill="#FFFFFF">
+            <path
+                d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-.77-3.29-2-4.22v8.45c1.23-.93 2-2.45 2-4.23zM14 3.23v2.06c2.89 1.17 5 4.06 5 7.71s-2.11 6.54-5 7.71v2.06c4.01-1.25 7-5.06 7-9.77s-2.99-8.52-7-9.77z" />
+        </svg>
+    </div>
+
+    <div class="contenedortexto">
+        <div class="title">SABOR A MÉXICO</div>
+        <div class="content">
+            <div class="imagen-chocolate">
+                <img src="/imagen/sabormexico.png" alt="Chocolate Mexicano">
+            </div>
+            <p2> La gastronomía mexicana es el conjunto de
+                platillos y técnicas culinarias que forman parte de
+                las tradiciones y vida común de sus habitantes. Es
+                conocida por su sabor, generalmente picante, y su
+                gran variedad. Su origen se remonta al período
+                prehispánico cuando una gran cantidad de platillos
+                giraban alrededor del maíz.
+                Existen ciertos platillos que le han dado fama
+                mundial a la gastronomía mexicana, como el mole,
+                los chiles en nogada, la sopa de lima, la cochinita pibil, las carnitas y los famosos tacos, entre
+                otros.
+                Además, se encuentran también bebidas como el tequila, la cerveza, aguas frescas de diversas
+                frutas tropicales, el atole, el champurrado y, por supuesto, el chocolate.
+                En cuanto a los postres, también se tienen importantes aportes como el flan, la capirotada y la
+                gran variedad de dulces tradicionales elaborados con leche y azúcar.
+                Entre los principales ingredientes de toda la gastronomía mexicana se encuentran: el chile,
+            </p2>
+                
+        </div>
+        <div class="questions-container">
+            <ol>
+                <li>
+                    La gastronomía mexicana es conocida por su sabor dulce y su gran variedad.                    <div class="options">
+                        <button>V</button>
+                        <button  class="correct">F</button>
+                    </div>
+                </li>
+                <li>
+                    El maíz ha sido un ingrediente central en la gastronomía mexicana desde el período prehispánico.                    <div class="options">
+                        <button class="correct">V</button>
+                        <button>F</button>
+                    </div>
+                </li>
+                <li>
+                    Platillos como el mole, los chiles en nogada y la sopa de lima han dado fama mundial a la gastronomía mexicana.                   <div class="options">
+                        <button class="correct">V</button>
+                        <button>F</button>
+                    </div>
+                </li>
+                <li>
+                    El tequila y la cerveza son algunas de las bebidas típicas de la gastronomía mexicana.
+                    <div class="options">
+                        <button class="correct">V</button>
+                        <button>F</button>
+                    </div>
+                </li>
+                <li>
+                    Entre los postres mexicanos más conocidos se encuentra el pastel de tres leches.
+                    <div class="options">
+                        <button>V</button>
+                        <button class="correct">F</button>
+                    </div>
+                </li>
+            </ol>
+        </div>
+    </div>
+
+
+    <div id="modal" class="modalNext">
+        <div class="modalNext-content">
+            <p>¡BIEN HECHO!</p>
+            <p>¡ACTIVIDAD COMPLETADA!</p>
+        </div>
+    </div>
+
+    <audio id="audioElement" autoplay loop>
+        <source src="/audio/level2.mp3" type="audio/mp3">
+    </audio>
+
+    <svg id="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+        <defs>
+            <linearGradient id="linear-gradient" x1="24" y1="48" x2="24" y2="0" gradientUnits="userSpaceOnUse">
+                <stop offset="0" stop-color="#27e9de" />
+                <stop offset="0.52" stop-color="#03a4ec" />
+                <stop offset="1" stop-color="#2547a8" />
+            </linearGradient>
+        </defs>
+        <circle cx="24" cy="24" r="21" stroke="url(#linear-gradient)" stroke-width="2" fill="none" />
+        <path d="M15 24h14M24 18l6 6-6 6" stroke="url(#linear-gradient)" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+    </svg>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>

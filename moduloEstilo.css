@@ -1,0 +1,173 @@
+h1 {
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  animation: vibrarLogo 1.0s infinite alternate;
+  font-style: normal;
+  color: #1D4989;
+  font-size: 70px;
+  line-height: 1.2;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+}
+
+.descripcion_juegos {
+  margin: 20px auto;
+  padding: 20px;
+  text-align: left;
+  background-color: #f8f8f8;
+  border-radius: 15px;
+  max-width: 600px;
+}
+
+.descripcion_juegos h2 {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  color: #1D4989;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.descripcion_juegos p::before {
+  content: "► "; /* Puedes cambiar el símbolo aquí */
+  color: #1D4989;  /* Cambia el color si lo necesitas */
+  font-weight: bold;
+  margin-right: 5px; /* Espacio entre el símbolo y el texto */
+}
+
+.descripcion_juegos p {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+.descripcion_juegos p:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+.descripcion_juegos p:nth-child(3) {
+  animation-delay: 1s;
+}
+
+.descripcion_juegos p:nth-child(4) {
+  animation-delay: 1.5s;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.descripcion_juegos p {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  color: #333;
+  font-size: 15px;
+  margin-bottom: 17px;
+  line-height: 1.3;
+}
+
+.white-container {
+  flex: 3.5;
+  background-color: white;
+  text-align: center;
+  padding: 5vh 7vw;
+}
+
+.orange-container {
+  flex: 5;
+  background-color: #E74424;
+  text-align: center;
+  padding: 5vh 5vw;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.arrow-icon {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transform: scaleX(-1);
+}
+
+.ttl_mod1 {
+  margin-top: 70px;
+  color: aliceblue;
+}
+
+.parrafo {
+  margin-top: 10px;
+  animation: vibrarLogo 1.0s infinite alternate;
+  font-size: 30px;
+  color: aliceblue;
+}
+
+.btn_mod1 {
+  margin-top: 20px;
+  font-size: 30px;
+  border: 10px solid #1D4989;
+  cursor: pointer;
+  color: #1D4989;
+  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  animation: brilloBoton 0.2s infinite alternate;
+}
+
+.btn_mod1:hover {
+  background-color: aliceblue;
+  border-color: rgba(29, 73, 137, 0.5);
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(29, 73, 137, 0.8);
+  animation: none;
+}
+@keyframes brilloBoton {
+  0% {
+      filter: brightness(100%);
+  }
+  100% {
+      filter: brightness(150%);
+  }
+}
+.logo-img {
+
+  margin-top: 50px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  animation: vibrarLogo 1.0s infinite alternate;
+}
+
+.logo-img:hover {
+  transform: scale(1.1);
+}
+
+@keyframes vibrarLogo {
+  0% {
+    transform: translateY(-3px);
+  }
+
+  100% {
+    transform: translateY(3px);
+  }
+}
+
+@media (min-width: 820px) {
+  body {
+    flex-direction: row;
+  }
+
+  .button-container button {
+    padding: 1.3vw 10vw;
+
+  }
+
+}

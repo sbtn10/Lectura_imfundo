@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.white-container {
+  flex: 3.5;
+  background-color: white;
+  text-align: center;
+  padding: 10vh 10vw;
+}
+
+.orange-container {
+  flex: 5;
+  background-color: #E74424;
+  text-align: center;
+  padding: 10vh 10vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cuadricula-5x4 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 columnas iguales */
+  grid-gap: 10px; /* Espacio entre botones */
+}
+
+.button-container {
+  margin-top: 5vh;
+  text-align: center;
+}
+
+.button-container button {
+  width: 60px; /* Ajusta el tamaño del botón */
+  height: 60px; /* Ajusta el tamaño del botón */
+  margin-bottom: 15px;
+  display: block;
+  border-radius: 50%; /* Hace el botón circular */
+  font-size: 12px;
+  cursor: pointer;
+  padding: 0; /* Remueve el padding interno */
+  border: none;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  animation: vibrarLogo 1.0s infinite alternate;
+  color: #1D4989;
+}
+
+.button-container button:hover {
+  transform: scale(1.1);
+  background-color: #0056b3;
+  color: #ffffff;
+}
+
+/* estilo.css */
+.blocked {
+  opacity: 0.5;
+  pointer-events: none; /* Evita que los botones bloqueados sean clicables */
+}
+
+h1 {
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  color: #1D4989;
+  font-size: 8.2vw;
+  line-height: 1.2;
+  margin-top: 8%;
+  animation: aparecer 1s ease forwards;
+  animation: vibrarLogo 0.5s infinite alternate;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes vibrarLogo {
+  0% {
+    transform: translateY(-3px);
+  }
+
+  100% {
+    transform: translateY(3px);
+  }
+}
+
+.locked {
+  background-color: #ddd;
+  pointer-events: none;
+}
+
+.unlocked {
+  color: white;
+}
+
+@media (min-width: 820px) {
+  body {
+    flex-direction: row;
+  }
+
+  .button-container button {
+    width: 60px; /* Ajusta el tamaño del botón */
+    height: 60px; /* Ajusta el tamaño del botón */
+  }
+
+  .button-container {
+    margin-top: 25%;
+  }
+
+  h1 {
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    color: #1D4989;
+    font-size: 4.2vw;
+    line-height: 1.2;
+    margin-top: 8%;
+  }
+}
+
+.white-container,
+.orange-container {
+  border: 5px solid transparent;
+  animation: aparecer 3s;
+}

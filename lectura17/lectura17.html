@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lectura</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="shortcut icon" href="../imagen/logo.ico" type="imagen/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <p class="texto">¡Lee y completa!</p>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="35" height="35" fill="#FFFFFF">
+            <path
+                d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-.77-3.29-2-4.22v8.45c1.23-.93 2-2.45 2-4.23zM14 3.23v2.06c2.89 1.17 5 4.06 5 7.71s-2.11 6.54-5 7.71v2.06c4.01-1.25 7-5.06 7-9.77s-2.99-8.52-7-9.77z" />
+        </svg>
+    </div>
+
+    <div class="contenedortexto">
+        <div class="title">Cinco pueblos argentinos para conocer con menos de 20 mil habitantes</div>
+
+        <div class="pueblo">
+            <h2>1. Tilcara, Jujuy</h2>
+            <p>Tilcara es un pueblo ubicado al norte de Argentina, en la provincia de Jujuy. Es un lugar caracterizado por
+                su apariencia de desierto, ya que está rodeado por montañas, rocas y cactus. Aproximadamente cuenta con
+                6 mil habitantes y tiene una altitud de 2488 metros. Tilcara es reconocido por ser escenario de un hecho
+                importante para la historia de Argentina, la Batalla de León, donde el ejército argentino luchó por la
+                independencia de su país.</p>
+            <img src="../imagen/tilcarajpg.webp" alt="Tilcara">
+        </div>
+
+        <div class="pueblo">
+            <h2>2. Villa Ángela, Chaco</h2>
+            <p>Fundada por dos empresarios suizos, Carlos Grünelsen y Julio Ulises Martín, quienes compraron una estancia
+                en la provincia del Chaco. Ambos formaron pequeños pueblos, siendo uno de ellos Villa Ángela. El nombre
+                fue un homenaje de Julio Ulises Martín a su esposa, la argentina Ángela Joostens. Villa Ángela es
+                conocido en Chaco por su tradicional carnaval, el cual se realiza todos los años en enero y febrero.</p>
+            <img src="../imagen/villachaco.jpg" alt="Villa Ángela">
+        </div>
+
+        <div class="pueblo">
+            <h2>3. Las Grutas, Río Negro</h2>
+            <p>Ideal para los amantes del verano. Las Grutas es un balneario ubicado en la costa argentina reconocido por
+                tener las playas más bonitas, donde el sol cálido, la arena y el agua pura forman un buen ambiente. Este
+                destino es muy visitado por las personas en los primeros meses del año, época ideal para disfrutar de
+                este hermoso sitio. Además de nadar en el mar, también puedes pasear en bote para conocer a los animales
+                marinos.</p>
+            <img src="../imagen/las-grutas.avif" alt="Las Grutas">
+        </div>
+
+        <div class="pueblo">
+            <h2>4. Las Leñas, Mendoza</h2>
+            <p>Si en Las Grutas vimos playa y calor, en Las Leñas hay nieve y frío. Aquí, los argentinos y extranjeros
+                practican deportes extremos invernales como el snowboarding, siendo uno de los principales centros de
+                entrenamiento en Latinoamérica. En las épocas de verano, y a pesar de que el lugar ya no tiene nieve,
+                las actividades no paran, ya que se practican otros deportes como las caminatas o el ciclismo de
+                montaña.</p>
+            <img src="../imagen/lasleñas.webp" alt="Las Leñas">
+        </div>
+
+        <div class="pueblo">
+            <h2>5. Villa de Merlo, San Luis</h2>
+            <p>Villa de Merlo es una zona con mucha naturaleza, entre campos y bosques, además de las montañas que la
+                rodean. Su clima cálido y la poca cantidad de habitantes generan un ambiente ideal para las personas que
+                buscan alejarse de la ciudad. Gracias a esto, Villa de Merlo se convirtió en una zona turística muy
+                visitada en Argentina.</p>
+            <img src="../imagen/villamerlo.jpg" alt="Villa de Merlo">
+        </div>
+
+        <h1 style="margin-top: 50px;">Complete la sopa de letras con las palabras mostradas.</h1>
+        <ul id="wordList"></ul>
+        <div id="wordSearchWrapper">
+            <div id="wordSearchContainer"></div>
+        </div>
+
+        <div class="preguntas-verdadero-falso">
+            <h2>Marca verdadero o falso</h2>
+            <ol>
+                <li>
+                    Villa de Merlo es una zona con mucha naturaleza, entre campos y bosques, además de las montañas que la
+                    rodean. Su clima cálido y la poca cantidad de habitantes generan un ambiente ideal para las personas que
+                    buscan alejarse de la ciudad. Gracias a esto, Villa de Merlo se convirtió en una zona turística muy
+                    visitada en Argentina.
+                    <div class="options">
+                        <button class="correct">Verdadero</button>
+                        <button>Falso</button>
+                    </div>
+                </li>
+            </ol>
+        </div>
+    </div>
+
+    <div id="modal" class="modalNext">
+        <div class="modalNext-content">
+            <p>¡BIEN HECHO!</p>
+            <p>¡ACTIVIDAD COMPLETADA!</p>
+        </div>
+    </div>
+
+    <svg id="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+        <defs>
+            <linearGradient id="linear-gradient" x1="24" y1="48" x2="24" y2="0" gradientUnits="userSpaceOnUse">
+                <stop offset="0" stop-color="#27e9de" />
+                <stop offset="0.52" stop-color="#03a4ec" />
+                <stop offset="1" stop-color="#2547a8" />
+            </linearGradient>
+        </defs>
+        <circle cx="24" cy="24" r="21" stroke="url(#linear-gradient)" stroke-width="2" fill="none" />
+        <path d="M15 24h14M24 18l6 6-6 6" stroke="url(#linear-gradient)" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+    </svg>
+    <script src="script.js"></script>
+    <script src="script2.js"></script>
+
+</body>
+
+</html>

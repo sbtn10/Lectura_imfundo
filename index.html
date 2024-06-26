@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio</title>
+  <link rel="stylesheet" href="estilo.css">
+
+  <!-- Optimización de fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+  <!-- Icono -->
+  <link rel="shortcut icon" href="./imagen/logo.ico" type="image/x-icon">
+</head>
+
+<body>
+  <div class="white-container">
+    <h1>
+      <span class="line1">ACTIVIDADES</span><br>
+      <span class="line2">DE</span><br>
+      <span class="line3">COMPRESION</span><br>
+      <span class="line4">LECTORA</span>
+    </h1>
+    <img src="./imagen/Logo_VIVA_IDIOMAS.png" alt="Imagen" style="margin-top: 30px;" class="logo-img">
+  </div>
+
+  <div class="orange-container ">
+    <div class="button-container bloque1 cuadricula-5x4">
+      <button id="btn1" class="animated-button unlocked" data-module="1">1</button>
+      <button id="btn2" class="animated-button locked" data-module="2">2</button>
+      <button id="btn3" class="animated-button locked" data-module="3">3</button>
+      <button id="btn4" class="animated-button locked" data-module="4">4</button>
+      <button id="btn5" class="animated-button locked" data-module="5">5</button>
+      <button id="btn6" class="animated-button locked" data-module="6">6</button>
+      <button id="btn7" class="animated-button locked" data-module="7">7</button>
+      <button id="btn8" class="animated-button locked" data-module="8">8</button>
+      <button id="btn9" class="animated-button locked" data-module="9">9</button>
+      <button id="btn10" class="animated-button locked" data-module="10">10</button>
+      
+      <button id="btn11" class="animated-button locked" data-module="11">11</button>
+      <button id="btn12" class="animated-button locked" data-module="12">12</button>
+      <button id="btn13" class="animated-button locked" data-module="13">13</button>
+      <button id="btn14" class="animated-button locked" data-module="14">14</button>
+      <button id="btn15" class="animated-button locked" data-module="15">15</button>
+      <button id="btn16" class="animated-button locked" data-module="16">16</button>
+      <button id="btn17" class="animated-button locked" data-module="17">17</button>
+      <button id="btn18" class="animated-button locked" data-module="18">18</button>
+      <button id="btn19" class="animated-button locked" data-module="19">19</button>
+      <button id="btn20" class="animated-button locked" data-module="20">20</button>
+
+  </div>
+
+  <!-- Audio -->
+  <audio id="hoverSound" src=".//audio/sonido.mp3"></audio>
+  <audio id="flechaSound" src=".//audio/next.mp3"></audio>
+  <audio id="audioElement" autoplay loop>
+    <source src=".//audio/inicio.mp3" type="audio/mp3">
+  </audio>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Recuperar el progreso del usuario de localStorage
+        let currentModule = parseInt(localStorage.getItem('currentModule')) || 1;
+
+        // Desbloquear los módulos según el progreso
+        for (let i = 1; i <= currentModule; i++) {
+            document.getElementById('btn' + i).classList.remove('locked');
+            document.getElementById('btn' + i).classList.add('unlocked');
+        }
+    });
+</script>
+
+</body>
+
+</html>

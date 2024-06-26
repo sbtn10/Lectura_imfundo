@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lectura</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="shortcut icon" href="../imagen/logo.ico" type="imagen/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <p class="texto">¡Lee atentamente y responde las preguntas marcando <i>"V"</i> verdadero o <i>"F"</i> Falso!</p>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="35" height="35" fill="#FFFFFF">
+            <path
+                d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-.77-3.29-2-4.22v8.45c1.23-.93 2-2.45 2-4.23zM14 3.23v2.06c2.89 1.17 5 4.06 5 7.71s-2.11 6.54-5 7.71v2.06c4.01-1.25 7-5.06 7-9.77s-2.99-8.52-7-9.77z" />
+        </svg>
+    </div>
+
+    <div class="contenedortexto">
+        <div class="title">CULTURA PANAMEÑA</div>
+        <div class="content">
+            <div class="imagen-chocolate">
+                <img src="/imagen/panamacultura.jpg" alt="Chocolate Mexicano">
+            </div>
+            <p2> <h2>El festival de la pollera</h2>Es una celebración que se lleva a cabo todos los años cada 22 de julio,
+                en la ciudad de Las Tablas durante la festividad de la Virgen Librada,
+                y se realiza en conmemoración a uno de los trajes típicos femeninos
+                más importantes del país, la pollera.
+                La festividad transcurre entre desfiles y música. Se realiza un concurso
+                para elegir al mejor atuendo y cerca de 15000 mujeres participan
+                luciendo sus características polleras.
+                El traje típico consiste en un vestido de
+                dos piezas conformadas por una prenda
+                llamada pollerón en la parte superior, y por
+                la falda en la parte inferior. En la cabeza
+                lleva un adorno llamado “tembleque” y en
+                los pies zapatos de raso. <br>
+            <h2>Carnaval panameño</h2> El carnaval tiene lugar entre los meses de
+            febrero y marzo, tiene una duración de cinco
+            días de celebraciones previas al Miércoles
+            de Ceniza. Durante el carnaval se realizan
+            múltiples actividades festivas en las calles de
+            Panamá. Música, máscaras, desfiles y danzas
+            son parte de los elementos festivos.
+            A partir del primer día del evento, se suele
+            realizar la elección de la reina del carnaval y su
+            corte. Posteriormente comienzan las caravanas.
+            Muchos exhiben trajes coloridos. También se
+            organizan eventos musicales y se acostumbra
+            empapar a la multitud con agua al encontrarse
+            en las calles. La celebración puede durar hasta
+            el amanecer del Miércoles de Ceniza, que
+            implica el final de la celebración y el comienzo
+            del período de cuaresma.</p2>
+            
+        </div>
+        <div class="questions-container">
+            <ol>
+                <li>
+                    El carnaval en Panamá se celebra en los meses de diciembre y enero..
+                    <div class="options">
+                        <button>V</button>
+                        <button  class="correct">F</button>
+                    </div>
+                </li>
+                <li>
+                    Durante el carnaval, se elige a la reina del carnaval el primer día del evento.
+                    <div class="options">
+                        <button class="correct">V</button>
+                        <button>F</button>
+                    </div>
+                </li>
+                <li>
+                    La celebración del carnaval en Panamá incluye música, máscaras, desfiles y danzas.                    <div class="options">
+                        <button class="correct">V</button>  
+                        <button>F</button>
+                    </div>
+                </li>
+                <li>
+                    La festividad de la Virgen Librada se lleva a cabo en la ciudad de Las Tablas el 22 de junio.
+                    <div class="options">
+                        <button>V</button>
+                        <button class="correct">F</button>
+                    </div>
+                </li>
+                <li>
+                    Durante la festividad de la Virgen Librada, se elige al mejor atuendo de pollera, y participan cerca de 15000 mujeres.
+                    <div class="options">
+                        <button class="correct">V</button>
+                        <button>F</button>
+                    </div>
+                </li>
+            </ol>
+        </div>
+    </div>
+
+    <div id="modal" class="modalNext">
+        <div class="modalNext-content">
+            <p>¡BIEN HECHO!</p>
+            <p>¡ACTIVIDAD COMPLETADA!</p>
+        </div>
+    </div>
+
+
+    <svg id="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+        <defs>
+            <linearGradient id="linear-gradient" x1="24" y1="48" x2="24" y2="0" gradientUnits="userSpaceOnUse">
+                <stop offset="0" stop-color="#27e9de" />
+                <stop offset="0.52" stop-color="#03a4ec" />
+                <stop offset="1" stop-color="#2547a8" />
+            </linearGradient>
+        </defs>
+        <circle cx="24" cy="24" r="21" stroke="url(#linear-gradient)" stroke-width="2" fill="none" />
+        <path d="M15 24h14M24 18l6 6-6 6" stroke="url(#linear-gradient)" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+    </svg>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

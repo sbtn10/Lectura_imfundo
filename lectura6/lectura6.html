@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lectura</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="shortcut icon" href="../imagen/logo.ico" type="imagen/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <p class="texto">¡Lee y complete.</p>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="35" height="35" fill="#FFFFFF">
+            <path
+                d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-.77-3.29-2-4.22v8.45c1.23-.93 2-2.45 2-4.23zM14 3.23v2.06c2.89 1.17 5 4.06 5 7.71s-2.11 6.54-5 7.71v2.06c4.01-1.25 7-5.06 7-9.77s-2.99-8.52-7-9.77z" />
+        </svg>
+    </div>
+
+    <div class="contenedortexto">
+        <div class="title">BRASIL CARVANAL</div>
+        <div class="content">
+            <img src="../imagen/COMIDA.jpeg" alt="comida" class="comida">
+            <p>El Carnaval de Brasil nos muestra la riqueza de la cultura brasileña,
+                la alegría de su gente, la delicia de su gastronomía como la feijoada,
+                el vatapá, la picanha, entre otros; también el ritmo de sus danzas, la
+                majestuosidad de sus trajes y carros alegóricos.
+                Durante la época del carnaval, a lo largo y ancho de todo el país, se
+                puede disfrutar de colores, música, tradiciones culturales, y bailes
+                como la samba, el axe, la capoeira, la lambada y el sertanejo.</p>
+
+            <img src="../imagen/carnaval.jpeg" alt="carnaval" class="carnaval">
+            <p>En cada región de Brasil, la música y el baile pueden variar. Por
+                ejemplo, en algunas ciudades no es la samba la música que más
+                se baila y disfruta en épocas de carnaval, pero sí en todas ellas los
+                disfraces o vestuarios que usan tanto turistas como participantes del
+                Carnaval son coloridos y hermosos.
+                De todos los carnavales de Brasil, el de Río de Janeiro es el más
+                famoso; puedes ver la celebración en el Sambódromo Marqués de
+                Sapucaí. Ahí las escuelas de samba se presentan con una temática
+                diferente y por lo general de una belleza tal, que ver el desfile es toda
+                una explosión de los sentidos.</p>
+            <img src="../imagen/bahia.jpg" alt="bahia" class="bahia">
+            <p>En muchos casos, los temas presentados por las escuelas son de gran
+                reflexión y dejan mucho más que color y alegría a los sentidos.
+                Además de los desfiles de las escuelas y la fiesta en torno al
+                Sambódromo, el Carnaval de Río de Janeiro ofrece galas privadas y
+                fiestas en las calles de la ciudad, en las cuales puedes participar y que
+                son de una gran belleza cultural.</p>
+            <img src="../imagen/recife.jpg" alt="recife" class="recife">
+            <p>Si vas a Brasil para el Carnaval
+                también puedes visitar Recife,
+                cuyas playas se conjugan con la
+                alegría del carnaval de la ciudad.
+                Además, puedes visitar otros
+                lugares turísticos como Salvador,
+                capital del estado de Bahía, la
+                cual te sorprenderá con su belleza
+                arquitectónica y natural.
+                No esperes más, Brasil te va a
+                encantar.</p>
+        </div>
+        <h1 style="margin-top: 50px;">Complete la sopa de letras con las palabras mostradas.</h1>
+        <ul id="wordList"></ul>
+        <div id="wordSearchContainer"></div>
+    </div>
+
+    <div id="modal" class="modalNext">
+        <div class="modalNext-content">
+            <p>¡BIEN HECHO!</p>
+            <p>¡ACTIVIDAD COMPLETADA!</p>
+        </div>
+    </div>
+
+    <svg id="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+        <defs>
+            <linearGradient id="linear-gradient" x1="24" y1="48" x2="24" y2="0" gradientUnits="userSpaceOnUse">
+                <stop offset="0" stop-color="#27e9de" />
+                <stop offset="0.52" stop-color="#03a4ec" />
+                <stop offset="1" stop-color="#2547a8" />
+            </linearGradient>
+        </defs>
+        <circle cx="24" cy="24" r="21" stroke="url(#linear-gradient)" stroke-width="2" fill="none" />
+        <path d="M15 24h14M24 18l6 6-6 6" stroke="url(#linear-gradient)" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+    </svg>
+    <script src="script.js"></script>
+</body>
+
+</html>

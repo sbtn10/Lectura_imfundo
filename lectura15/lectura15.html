@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lectura</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="shortcut icon" href="../imagen/logo.ico" type="imagen/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <p class="texto">¡Lee y complete.</p>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="35" height="35" fill="#FFFFFF">
+            <path
+                d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-.77-3.29-2-4.22v8.45c1.23-.93 2-2.45 2-4.23zM14 3.23v2.06c2.89 1.17 5 4.06 5 7.71s-2.11 6.54-5 7.71v2.06c4.01-1.25 7-5.06 7-9.77s-2.99-8.52-7-9.77z" />
+        </svg>
+    </div>
+
+    <div class="contenedor-texto">
+        <h1>Comercio Justo
+        </h1>
+        <p>El Comercio Justo es un nuevo modelo comercial creado por algunas empresas que trabajan por un sistema
+            comercial más equitativo. A diferencia del sistema tradicional, este lleva la mayor cantidad de las ganancias
+            conseguidas a los vendedores y a los productores. A continuación, te mostraremos algunos casos de mujeres
+            que no solo les va bien en su negocio, sino que además aplican el comercio justo en sus empresas.</p>
+
+        <div class="destinos">
+            <div class="destino">
+                <div class="destino-img">
+                    <img src="../imagen/sumacsara.jpg" alt="Descripción de la imagen">
+                </div>
+                <div class="destino-contenido">
+                    <h2>Hermanas Torres García (Sumaq Qara)</h2>
+                    <p>La empresa peruana Sumaq Qara (hermoso cuero, en español),
+                        es una empresa textil que está dirigida por las hermanas Torres
+                        García (Roxana, Elile y Yuli). Ellas elaboran diversos productos
+                        textiles, desde prendas de vestir hasta alfombras, y las exportan a
+                        distintos países del mundo.
+                        Actualmente, Sumaq Qara tiene alrededor de 700 mujeres
+                        ayacuchanas que trabajan para la empresa. Sumaq Qara no solo
+                        trabaja por las mujeres, sino también por el medio ambiente,
+                        cuidando y aprovechando la lana que utilizan en sus tejidos.</p>
+                </div>
+            </div>
+            <div class="destino">
+                <div class="destino-img">
+                    <img src="../imagen/merl9ngpreza.webp" alt="Isla Tortuga">
+                </div>
+                <div class="destino-contenido">
+                    <h2>Merling Preza (PRODECOOP)</h2>
+                    <p>Merling Preza, una de las máximas representantes del Comercio
+                        Justo en Nicaragua, es dueña de la empresa exportadora de café
+                        PRODECOOP (Promotora de Desarrollo Cooperativo de las
+                        Segovias). Esta empresa cuenta con más de 2000 productores
+                        de café de la región Nueva Segovia, ubicada al norte del
+                        país. PRODECOOP es una empresa orgullosa por el trabajo
+                        de Comercio Justo que realiza, asegurando el crecimiento
+                        económico y social de los productores y de sus familias.
+                        Cuando le preguntan, ¿para qué fue creado PRODECOOP?
+                        Ella orgullosa responde: “Para erradicar la pobreza”.</p>
+                </div>
+            </div>
+            <div class="destino">
+                <div class="destino-img">
+                    <img src="../imagen/qaytu-logo.png" alt="Riviera Maya">
+                </div>
+                <div class="destino-contenido">
+                    <h2>Yurac Fiedler (Qaytu)</h2>
+                    <p>Qaytu (lana, en español) es una marca peruana dedicada al rubro
+                        textil, especializada en ropa para mujeres. Formada en el año 2017,
+                        se describe como una marca moderna y amigable con el medio
+                        ambiente. Así lo menciona una de las cofundadoras, Yurac Fiedler,
+                        la cual junto a su madre formaron esta empresa. Las prendas de
+                        vestir de Qaytu promueven una moda inspirada en la cultura
+                        peruana.
+                        Aproximadamente cuenta con 300 trabajadores, entre los que se
+                        encuentran una gran cantidad de tejedoras de comunidades del
+                        interior del país, impactando positivamente en muchas familias.
+                        </p>
+                </div>
+            </div>
+            
+        </div>
+
+
+        <h1 style="margin-top: 50px;">Complete la sopa de letras con las palabras mostradas.</h1>
+        <ul id="wordList"></ul>
+        <div id="wordSearchContainer"></div>
+    </div>
+
+  
+    <div id="modal" class="modalNext">
+        <div class="modalNext-content">
+            <p>¡BIEN HECHO!</p>
+            <p>¡ACTIVIDAD COMPLETADA!</p>
+        </div>
+    </div>
+
+    <svg id="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+        <defs>
+            <linearGradient id="linear-gradient" x1="24" y1="48" x2="24" y2="0" gradientUnits="userSpaceOnUse">
+                <stop offset="0" stop-color="#27e9de" />
+                <stop offset="0.52" stop-color="#03a4ec" />
+                <stop offset="1" stop-color="#2547a8" />
+            </linearGradient>
+        </defs>
+        <circle cx="24" cy="24" r="21" stroke="url(#linear-gradient)" stroke-width="2" fill="none" />
+        <path d="M15 24h14M24 18l6 6-6 6" stroke="url(#linear-gradient)" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+    </svg>
+    <script src="script.js"></script>
+</body>
+
+</html>
