@@ -1,6 +1,12 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-image: url('../imagen/ven.jpg');
+    background-size: cover;
+    /* Ajusta la imagen para cubrir toda la pantalla */
+    background-position: center;
+    /* Centra la imagen en la pantalla */
+    background-repeat: no-repeat;
+    /* Evita que la imagen se repita */
     margin: 0;
     padding: 0;
 }
@@ -9,7 +15,7 @@ body {
     padding: 20px;
     max-width: 800px;
     margin: 20px auto;
-    background-color: #ffffff;
+    background: #fbf2f2ba;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -820,7 +826,7 @@ svg {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #f9f9f9;
+    background: #fbf2f2f3;
     padding: 15px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);

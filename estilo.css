@@ -14,6 +14,7 @@ body {
 }
 
 .orange-container {
+  position: relative; /* Asegura que el contenedor naranja tenga posición relativa */
   flex: 5;
   background-color: #E74424;
   text-align: center;
@@ -21,6 +22,32 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.button-description {
+  position: absolute;
+  top: 10%; /* Centra verticalmente en relación al contenedor */
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centra horizontalmente en relación al contenedor */
+  width: auto;
+  max-width: 250px; /* Ancho máximo para controlar el tamaño del rectángulo */
+  padding: 10px; /* Espacio interno */
+  background: linear-gradient(135deg, white, orange); /* Degradado de blanco a naranja */
+  color: black; /* Color del texto negro para mejor legibilidad */
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.5;
+  border: 2px solid white; /* Borde blanco de 2px */
+  border-radius: 8px; /* Bordes redondeados */
+  display: none; /* Inicialmente oculto */
+  z-index: 999; /* Asegura que esté encima de los botones */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombra para mejorar la legibilidad del texto */
+}
+/* Resto de estilos para los botones y el contenedor */
+
+
+.animated-button {
+  position: relative; /* Asegura que los botones tengan una posición relativa */
 }
 
 .cuadricula-5x4 {
