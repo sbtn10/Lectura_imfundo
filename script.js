@@ -8,7 +8,7 @@ function reproducirSonidoHover() {
 }
 
 // Event listeners para los botones
-for (let i = 1; i <= 12; i++) {
+for (let i = 1; i <= 20; i++) {
     let button = document.getElementById(`btn${i}`);
     button.addEventListener('mouseover', reproducirSonidoHover);
     button.addEventListener('click', handleModule);
